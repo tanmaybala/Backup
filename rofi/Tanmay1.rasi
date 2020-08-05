@@ -1,0 +1,119 @@
+/**
+ * User: qball
+ * Copyright: Dave Davenport
+ */
+* {
+    text-color:  #ffeedd;
+    background-color:  rgba(0,0,0,0);
+    dark: #1c1c1c;
+    // Black
+    //black:       #3d352a;
+    black:	 #2f343f;
+    lightblack:  #554444;
+    //
+    // Red
+    red:         #cd5c5c;
+    lightred:    #cc5533;
+    //
+    // Green
+    green:       #86af80;
+    lightgreen:  #88cc22;
+    //
+    // Yellow
+    yellow:      #e8ae5b;
+    lightyellow:     #ffa75d;
+    //
+    // Blue
+    blue:      #6495ed;
+    lightblue:     #87ceeb;
+    //
+    // Magenta
+    magenta:      #deb887;
+    lightmagenta:     #996600;
+    //
+    // Cyan
+    cyan:      #b0c4de;
+    lightcyan:     #b0c4de;
+    //
+    // White
+    white:      #bbaa99;
+    lightwhite:     #ddccbb;
+    //
+    // Bold, Italic, Underline
+    highlight:     bold #ffffff;
+    lines:	3;
+}
+#window {
+    height:   100%;
+    //width: 30em;
+    width: 100%;
+    location: center;
+    anchor:   center;
+    border:  0px 0px 0px 0px;
+    text-color: @green;
+    lines: 3;
+}
+
+#mode-switcher {
+    border: 0px 0px 0px 0px;
+    background-color: @lightblue;
+    padding: 4px;
+}
+
+
+#mainbox {
+    expand: true;
+    padding: 20em 0em 0em 30em;
+    location: center;
+    background-color: #1c1c1cee;
+    spacing: 1em;
+    text-color: @green;
+}
+
+#inputbar {
+    //background-color: @lightblack;
+    text-color: @blue;
+    padding: 4px;
+    border: 0px 0px 0px 0px;
+    lines: 3;
+}
+
+#button selected {
+    border-color: @lightgreen;
+    text-color: @lightgreen;
+}
+
+#listview {
+    dynamic: false;
+    lines: 3;
+    column: 3;
+    hide-scrollbar: true;
+    text-color: @lightgreen;
+}
+#element selected  normal {
+    //background-color: @black;
+    text-color: @black;
+}
+#element normal active {
+    text-color: @lightgreen;
+}
+#element normal urgent {
+    text-color: @lightred;
+}
+#element alternate normal {
+    //text-color: @lightgreen;
+}
+#element alternate active {
+    text-color: @lightblue;
+}
+#element alternate urgent {
+    text-color: @lightred;
+}
+#element selected active {
+    background-color: @lightblue;
+    text-color: @dark;
+}
+#element selected urgent {
+    background-color: @lightred;
+    text-color: @dark;
+}

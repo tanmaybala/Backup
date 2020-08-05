@@ -1,0 +1,10 @@
+#!/bin/bash
+
+time=$(date  +"%Y-%m-%d")
+sec=$(date  +"%S")
+if [ $(( $sec % 2 )) == 0 ]
+then
+	echo " "$time
+else
+	echo " "$time
+fi
