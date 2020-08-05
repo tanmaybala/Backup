@@ -78,3 +78,5 @@ alias l='ls -lG --color --group-directories-first -A -v'
 #Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+export LD_LIBRARY_PATH="/usr/local/staf/lib"
+export CLASSPATH="$CLASSPATH:.:selenium-server-standalone-3.141.59.jar:testng-6.5.1.jar"
