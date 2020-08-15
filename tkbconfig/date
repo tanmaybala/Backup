@@ -1,6 +1,6 @@
 #!/bin/bash
 
-time=$(date  +"%Y-%m-%d")
+time=$(date  +"%d-%m-%y")
 sec=$(date  +"%S")
 if [ $(( $sec % 2 )) == 0 ]
 then

@@ -5,6 +5,8 @@ sec=$(date  +"%S")
 if [ $(( $sec % 2 )) == 0 ]
 then
 	echo " "$time
+	#echo " "$time
 else
 	echo " "$time
+	#echo " "$time
 fi

@@ -44,7 +44,7 @@ if ($status eq 'Discharging') {
 	}elsif ($percent lt 50)
         {
 		$full_text .= '  ';
-        }elsif ($percent lt 70)
+        }elsif ($percent lt 80)
         {
                 $full_text .= '  ';
         }
@@ -52,6 +52,10 @@ if ($status eq 'Discharging') {
         {
 		$full_text .= '  ';
         }
+	else
+	{
+		$full_text .= ' ';
+	}
 } elsif ($status eq 'Charging') {
 	if ($percent gt 90)
         {
@@ -68,9 +72,8 @@ if ($status eq 'Discharging') {
                 $full_text .= '  ';
         }else
 	{
-		$full_text .= ' ';
+		$full_text .= ' Hi';
 	}
-	#$full_text .= ' ';
 } elsif ($status eq 'Full') {
 	$full_text .= ' ';
 }
@@ -102,10 +105,10 @@ if ($status eq 'Discharging') {
 		exit(33);
 	}
 }
-if ($status eq 'Full') {
-
-	print "#bee805\n";
-}
+#if ($status eq 'Full') {
+#
+#	print "#bee805\n";
+#}
 
 
 exit(0);
