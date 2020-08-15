@@ -18,4 +18,6 @@ Copy ".fonts" foler in .config/
 Copy ".zshrc" file in .config
 
 
-
+# ~/.config/xmodmap
+1. Change hjkl keys for left down up right.
+2. Change caps to esc.
